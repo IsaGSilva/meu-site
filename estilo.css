@@ -1,0 +1,131 @@
+*{
+	 margin:0;/*Zerando os preenchimentos e margens da página*/
+	 padding:0;
+}
+#conteiner{
+	 margin:50px;/*Adicionando margem geral em todos os lados da div principal*/
+}
+#cabecalho{
+	 text-align:center;/*Alinhando ao centro a logo*/
+	 padding-bottom:50px;/*adicionando um preenchimento de 50px abaixo da logo*/
+}
+#menu{
+	 border: 1px solid black;
+	 border-radius:20px;/*arredondando o menu*/
+     height:50px; /*aumentando a altura do menu principal*/
+     text-align:center;/*Alinhamento dos itens do menu ao centro*/
+	 background-color: black;/*alterando a cor de fundo do menu principal*/ 
+}
+#menu li {
+	 list-style-type:none;/*retirando os marcadores dos itens do menu*/
+	 display:inline;/*transformando os itens do menu para o formato horizontal*/
+}
+#menu a {
+	 font-size:25px;/*alterando o tamanho da fonte do hiperlink*/
+	 color:white;/*alterando a cor do hiperlink*/
+	 text-decoration:none;/*retirando o sublinhado do hiperlink*/
+	 padding:10px 20px;/*"engordamento" os hiperlinks*/
+	 margin: 0 50px 0 50px;/*distaciando os hiperlinks uns dos outros*/
+	 line-height:50px;/*centralizando verticalmente os hiperlinks*/
+}
+#menu a:hover {
+	 border:2px solid white;/*Adicionando uma borda quando passar o mouse sobre os hiperlinks*/
+	 border-radius:10px;/*Arredondando as bordas dos hiperlink*/
+}
+#carrossel{
+	
+}
+#conteudo{
+	 padding:10px 0px ;
+	 display:grid;/*Transformando o conteudo em uma grade(tabela)*/
+	 grid-template-columns: 32% 32% 32%; /*dividindo a grid em 3 colunas */
+	 grid-gap:20px;/*espaçamento entre uma coluna e a outra*/	
+}
+
+#c1{/*divs escritas dos conteudos*/
+	 padding:10px;
+     background-color:#B22222;
+     border-radius:10px;/*Arredondando as bordas dos conteudos*/
+     	 
+}
+#c2{/*divs escritas dos conteudos*/
+	 padding:10px;
+     background-color:#7FFFD4;
+	 border-radius:10px;/*Arredondando as bordas dos conteudos*/
+     	 
+}
+#c3{/*divs escritas dos conteudos*/
+	 padding:10px;
+	 background-color:#DA70D6;
+	 border-radius:10px;/*Arredondando as bordas dos conteudos*/
+	 
+}
+
+.img_conteudo{
+	width:100%;
+	height:150px;
+	border:2px solid black;
+	border-radius:10px;/*Arredondando as bordas das imagens*/
+}
+.p_conteudo{/*padronização do paragrafo do conteudo*/
+	text-align:justify;/*Alinhamento justificado do texto*/
+	font-family:tahoma;/**/
+}
+.h2_conteudo{/*padronização do texto do conteudo*/
+	text-align:center;/**/
+	font-family:tahoma;/**/
+}
+#galeria{
+	background-color:#FF6347;/*inserir uma cor de fundo na galeria*/
+	display:grid;/*transformando a div de galeria em uma grade(tabela)*/
+	grid-template-columns:19.5% 19.5% 19.5% 19.5% 19.5%;/*dividindo em 5 colunas*/
+    grid-gap:0.62%;/*inserindo um espaço entre as colunas */	
+	padding-top:70px;/*adicionou um preenchimento no topo da galeria*/
+	padding-bottom:70px;/*adicionou um preenchimento na parte debaixo da galeria*/
+}
+.img_galeria{/*criando uma classe para padronizar as imagens da galeria*/
+	width:100%;/*tamanho horizontal da imagem - largura*/
+	height:150px;/*a altura da imagem*/
+}
+.img_galeria:hover{/*quando passar o mouse em cima das imagens da galeria */
+	box-shadow:10px 5px 10px black;/*inserir uma sombra nas imagens*/
+}
+#jumbotron{
+	text-align:center;/*centralizando todo o conteúdo da div*/
+	padding:50px 240px; /*adicionando preenchimento em todos os lados da div*/
+}
+#jumbotron p{
+	font-family: calibri;
+	font-size:20px;
+	color:#666;
+}
+.button_jumbo{
+	padding:10px 70px;
+	background-color:#DEB887;
+	font-family:calibri;
+	color:white;
+	font-size:20px;
+	border:none;/*retirando as bordas do botão*/
+	border-radius:10px;/*arredondando o botão*/
+}
+#jumbotron button:hover{/*Quando passar o mouse em cima do botão*/
+	background-color:#1C1C1C;
+	transition:o.3s;/*retardando a mudança de cor do botão*/
+}
+#rodape{
+	padding:50px 150px;
+	background-color:#1C1C1C;
+	font-size: 20px;
+	color:white;
+	display:grid;
+	grid-template-columns: 30% 30% 30% ;
+	grid-gap: 10%;
+}
+#rodape a {/*formatando os hiperlinks do rodapé*/
+	text-decoration:none;/*retirando o sublinhado*/
+	color:white;
+}
+#rodape a :hover {
+	color:#00BFFF;
+	transition:0.3s;
+}
